@@ -1,3 +1,7 @@
+# Author: Ugo B.
+# 2024-06-01
+# github.com/pastacolsugo
+
 from pypdf import PdfReader
 import os
 import re
