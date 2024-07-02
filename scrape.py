@@ -62,6 +62,11 @@ if __name__ == '__main__':
     tree_root = sys.argv[1]
     output_file = sys.argv[2]
     files = find_pdfs(tree_root)
+
+    if files == []:
+        print(f'nessun pdf trovato in {tree_root}')
+        print('hai inserito il percorso corretto?')
+        exit(0)
     
     with open(output_file, 'w') as of:
         of.write("\t".join(regex.keys()) + '\n')
